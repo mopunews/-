@@ -1,16 +1,21 @@
-body {
-  font-family: sans-serif;
-  padding: 20px;
-  background: #f9f9f9;
+.news-article {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
 }
 
-h1 {
-  color: #333;
+.news-article h2 {
+  font-size: 1.4rem;
+  color: #0077cc;
+  margin: 0 0 5px 0;
 }
 
-.news-item {
-  background: white;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-left: 5px solid #007bff;
+.news-summary {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
 }
+
+.news-date {
+  font-size: 0.85rem;
+  color: #999;
+}
+
