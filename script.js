@@ -1,6 +1,6 @@
 const newsList = [
   {
-    title: "모푸의 컴퓨터 문제가...",
+    title: "모푸 머리 그리 크지 않다...",
     summary: "사랑해요",
     date: "2025-08-20"
   },
@@ -25,4 +25,5 @@ newsList.forEach((news, index) => {
 
   container.appendChild(div);
 });
+
 
