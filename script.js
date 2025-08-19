@@ -5,7 +5,7 @@ const newsList = [
     date: "2025-08-20"
   },
   {
-    title: "두 번째 기사 제목입니다",
+    title: "모푸 생일 굿즈 전격 공개...",
     summary: "두 번째 기사 내용이에요.",
     date: "2025-08-19"
   }
@@ -25,5 +25,6 @@ newsList.forEach((news, index) => {
 
   container.appendChild(div);
 });
+
 
 
