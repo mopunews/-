@@ -37,7 +37,7 @@
 
 #main-title {
   color: #c4bee2; 
-  font-size: 6rem;  /* 글자 크기 키우기 */
+  font-size: 4.5rem;  /* 글자 크기 키우기 */
   font-weight: bold; /* 더 두껍게 (선택 사항) */
   margin: 20px 0; /* 위아래 여백 추가 (선택 사항) */
 }
@@ -55,5 +55,6 @@
   object-fit: cover; /* 이미지 꽉 채우기 + 비율 유지 */
   display: block;
 }
+
 
 
