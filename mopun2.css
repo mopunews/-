@@ -56,5 +56,15 @@
   display: block;
 }
 
+.news-title-link {
+  color: #000000;          /* 기본 글자 색 */
+  text-decoration: none;   /* 밑줄 없애기 */
+  font-weight: 600;        /* 글자 두껍게 */
+}
+
+.news-title-link:hover {
+  color: #004a99;          /* 마우스 올렸을 때 색 */
+  text-decoration: underline; /* 호버 시 밑줄 */
+}
 
 
