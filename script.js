@@ -1,6 +1,6 @@
 const newsList = [
   {
-    title: "모푸의 컴퓨터 문제가 모푸(관리자)의 문제가 아닐 수도 있다는 사실이 드러나...",
+    title: "모푸의 컴퓨터 문제가...",
     summary: "사랑해요",
     date: "2025-08-20"
   },
@@ -13,28 +13,38 @@ const newsList = [
 
 const container = document.getElementById("news-container");
 
-newsList.forEach(news => {
+newsList.forEach((news, index) => {
   const div = document.createElement("div");
   div.classList.add("news-article");
 
   div.innerHTML = `
-    <h2 class="news-title">${news.title}</h2>
-    <div class="news-content" style="display:none;">
-      <p class="news-summary">${news.summary}</p>
-      <small class="news-date">${news.date}</small>
-    </div>
+    <a href="article.html?index=${index}" target="_blank" class="news-title-link">
+      <h2 class="news-title">${news.title}</h2>
+    </a>
   `;
 
   container.appendChild(div);
 });
+target="_blank"로 새 창 또는 새 탭에서 열림
 
-container.addEventListener("click", (e) => {
-  if (e.target.classList.contains("news-title")) {
-    const content = e.target.nextElementSibling;
-    if (content.style.display === "none") {
-      content.style.display = "block";
-    } else {
-      content.style.display = "none";
-    }
+?index=0, ?index=1 같은 주소로 기사를 구분해서 넘김
+
+2. ✨ 새 파일: article.html (기사 단독 페이지)
+html
+코드 복사
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>모뿌 뉴스 - 기사 보기</title>
+  <link rel="stylesheet" href="mopun2.css" />
+</head>
+<body>
+  <div id="article-container"></div>
+
+  <script src="article.js"></script>
+</body>
+</html>
   }
 });
+
