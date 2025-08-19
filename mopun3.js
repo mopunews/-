@@ -10,7 +10,13 @@ const container = document.getElementById("news-container");
 
 newsList.forEach(news => {
   const div = document.createElement("div");
-  div.innerHTML = `<h2>${news.title}</h2><p>${news.summary}</p><small>${news.date}</small>`;
-  container.appendChild(div);
+  div.classList.add("news-article");  // 클래스 추가
 
+  div.innerHTML = `
+    <h2>${news.title}</h2>
+    <p class="news-summary">${news.summary}</p>
+    <small class="news-date">${news.date}</small>
+  `;
+
+  container.appendChild(div);
 });
