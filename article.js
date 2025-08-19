@@ -5,7 +5,7 @@ const articleIndex = parseInt(params.get("index"), 10);
 // 뉴스 데이터
 const newsList = [
   {
-    title: "모푸의 컴퓨터 문제가...",
+    title: "모푸 머리 그리 크지 않다. 푸리들의 억까가 심한 편이다.",
     summary: "사랑해요",
     date: "2025-08-20"
   },
