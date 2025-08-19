@@ -25,26 +25,4 @@ newsList.forEach((news, index) => {
 
   container.appendChild(div);
 });
-target="_blank"로 새 창 또는 새 탭에서 열림
-
-?index=0, ?index=1 같은 주소로 기사를 구분해서 넘김
-
-2. ✨ 새 파일: article.html (기사 단독 페이지)
-html
-코드 복사
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <title>모뿌 뉴스 - 기사 보기</title>
-  <link rel="stylesheet" href="mopun2.css" />
-</head>
-<body>
-  <div id="article-container"></div>
-
-  <script src="article.js"></script>
-</body>
-</html>
-  }
-});
 
